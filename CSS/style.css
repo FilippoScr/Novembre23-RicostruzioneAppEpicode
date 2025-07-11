@@ -1,0 +1,514 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,800;1,900&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-image: url(../assets/img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  color: #ebebeb;
+  font-family: "Inter Tight", sans-serif;
+}
+
+header > img {
+  width: 130px;
+  margin: 2.5rem;
+  margin-left: 6.5rem;
+  margin-bottom: 2rem;
+  padding-left: 1.3rem;
+}
+
+#containerWelcome {
+  width: 80%;
+  padding-left: 7rem;
+}
+
+#containerWelcome h1 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 2.8rem;
+}
+
+#spanWelcome {
+  font-weight: 700;
+}
+
+#textWelcome {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+#containerWelcome h2 {
+  color: #d20094;
+  margin-bottom: 0rem;
+}
+
+#containerWelcome p {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  width: 60%;
+}
+
+#textWelcome ul {
+  padding-left: 0.9rem;
+}
+
+#footerWelcome {
+  margin-top: 2.5rem;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+/* #footerWelcome input,
+#footerWelcome h6,
+#footerWelcome button {
+  display: inline-block;
+} */
+
+#footerWelcome input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: #ebebeb solid 2px;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 1.8rem;
+  margin-right: 1rem;
+  position: relative;
+  accent-color: #ebebeb;
+}
+
+#footerWelcome input[type="checkbox"]:checked::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='purple' d='M5.5 11.6l-3.7-3.7c-.4-.4-.4-1 0-1.4s1-.4 1.4 0l2.3 2.3 6.3-6.3c.4-.4 1-.4 1.4 0s.4 1 0 1.4L6.9 11.6c-.4.4-1 .4-1.4 0z'/%3E%3C/svg%3E");
+  background-size: contain;
+  position: absolute;
+  bottom: -2px;
+  left: -1px;
+}
+
+#footerWelcome h6 {
+  font-weight: 500;
+}
+
+#footerWelcome button {
+  box-sizing: content-box;
+  margin-left: 12rem;
+  width: 8rem;
+  height: 2.3rem;
+  text-align: center;
+  color: black;
+  border: 0;
+  background-color: #00ffffed;
+  box-shadow: 0px 2px 20px 2px#00FFFF;
+}
+
+#footerWelcome button:hover {
+  cursor: pointer;
+  background-color: #00ffff;
+}
+
+
+
+/* pagina question  */
+
+#containerQuestion {
+  margin: 5rem auto 0rem auto;
+  width: 80%;
+  text-align: center;
+}
+
+#titleQuestion {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+
+
+/*TIMER*/
+
+#app {
+  position: absolute;
+  right: 6.5rem;
+  top: 3rem;
+}
+
+.base-timer {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.base-timer__svg {
+  transform: scaleX(1);
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 10px;
+  stroke: rgb(128, 128, 128, 0.2);
+}
+
+.base-timer__path-remaining {
+  stroke-width: 10px;
+  stroke-linecap: square;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+  color: #00ffff;
+}
+
+.base-timer__label {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
+#contenutoQuestion1 {
+  margin-top: 3.5rem;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+#contenutoQuestion1 button:first-child {
+  margin-right: 2rem;
+}
+
+#contenutoQuestion2 {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+#contenutoQuestion2 button:first-child {
+  margin-right: 2rem;
+}
+
+#questions {
+  margin-top: 12vh;
+}
+
+#questions button {
+  min-width: 30vw;
+  height: 4.7rem;
+  border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.077);
+  color: #ebebeb;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.selected {
+  background-image: linear-gradient(#d20093c2, #90007fc7);
+}
+
+#questions button:hover {
+  background-image: linear-gradient(#d20094, #900080);
+}
+
+#containerFooterQuestion {
+  position: relative;
+}
+
+#footerQuestion {
+  margin-top: 2.5rem;
+  height: 30vh;
+}
+
+#footerQuestion h3 {
+  font-weight: 500;
+  font-size: 1rem;
+  width: 25vw;
+  font-family: "Outfit", sans-serif;
+  letter-spacing: 1.2px;
+  margin-top: 30vh;
+  position: absolute;
+  left: 13.8vw;
+  bottom: 1vh;
+}
+
+#footerQuestion span:last-of-type {
+  color: #c501ae;
+}
+
+.nextButton {
+  box-sizing: content-box;
+  margin-left: 10rem;
+  width: 8rem;
+  height: 2.5rem;
+  text-align: center;
+  color: black;
+  border: 0;
+  background-color: #05b7b7ed;
+  box-shadow: 0px 2px 20px 2px#01caca;
+  position: absolute;
+  bottom: 15vh;
+  right: 11vw;
+  border-radius: 2px;
+  font-size: 0.8rem;
+}
+
+#answerSelected {
+  background-color: #00ffffed;
+  box-shadow: 0px 2px 20px 2px#00FFFF;
+  cursor: pointer;
+}
+
+#answerSelected:hover {
+  background-color: #00ffff;
+  box-shadow: 0px 2px 20px 2px#00FFFF;
+}
+
+
+
+
+/* pagina Results */
+
+#containerResults {
+  text-align: center;
+  line-height: 0.5rem;
+  font-family: "Outfit", sans-serif;
+}
+
+#containerResults h1 {
+  font-weight: 600;
+}
+
+#containerResults p {
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 1.1px;
+}
+
+#schemaResults div {
+  display: inline-block;
+}
+
+#rightAnswer,
+#wrongAnswer {
+  position: relative;
+  bottom: 200px;
+}
+
+#rightAnswer {
+  right: 40px;
+}
+
+#wrongAnswer {
+  left: 40px;
+  text-align: end;
+}
+
+#passedExam {
+  position: relative;
+  bottom: 215px;
+}
+
+#failedExam {
+  position: relative;
+  bottom: 215px;
+}
+
+#passedExam > h6 {
+  width: 170px;
+}
+
+#failedExam > h6 {
+  width: 170px;
+}
+
+#titleResults {
+  margin-bottom: 40px;
+}
+
+#wrongAnswer {
+  text-align: right;
+}
+
+#graficoResults {
+  width: 300px;
+  padding: 0;
+  margin: 0;
+  line-height: 0.8rem;
+}
+
+#graficoResults h5 span {
+  color: #00ffff;
+}
+
+#failedExam h5 span {
+  color: #d20094;
+}
+
+#graficoResults h6 {
+  font-weight: 400;
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+#rightAnswer,
+#wrongAnswer {
+  line-height: 0.1rem;
+  text-align: start;
+}
+
+#rightAnswer h3,
+#wrongAnswer h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1.6px;
+}
+
+#rightAnswer h2,
+#wrongAnswer h2 {
+  font-size: 2rem;
+}
+
+#rightAnswer h6,
+#wrongAnswer h6 {
+  margin: 0;
+  font-weight: 300;
+}
+
+#footerResults button {
+  width: 9rem;
+  height: 2.6rem;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 1px;
+  margin-bottom: 100px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#footerResults button:hover {
+  cursor: pointer;
+  color: #ebebeb;
+  box-shadow: 0px 2px 20px 2px#00FFFF;;
+  cursor: pointer;
+  background-color: #00ffff;
+  border: 0;
+  color: black;
+  font-weight: 600;
+}
+
+
+
+
+/* pagina feedback */
+
+#containerFeedback {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#containerFeedback main {
+  display: inline;
+}
+
+#containerFeedback h1 {
+  font-weight: 600;
+  font-size: 3.5rem;
+  font-family: "Outfit", sans-serif;
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+#containerFeedback h2 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  font-family: "Outfit", sans-serif;
+  margin-top: 4rem;
+}
+
+#containerFeedback h2:first-of-type{
+  margin-bottom: 4rem;
+}
+
+#perMarginStelline {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.fa-solid {
+  font-size: 2.5rem;
+  width: 3rem;
+  color: #03082f;
+}
+
+#stelline {
+  width: 40em;
+  display: inline; 
+}
+
+#stelline i:hover {
+  color: #00ffff3e;
+}
+
+#feedbackInputText {
+  display: inline; 
+}
+
+#feedbackInputText input {
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #d20094;
+  width: 70%;
+  padding: 0.5rem 0 0.5rem 2rem;
+  font-size: 1rem;
+  color: #ebebeb;
+  display: inline;
+  margin-top: 4rem;
+}
+
+#footerFeedback button {
+  box-sizing: content-box;
+  width: 10rem;
+  height: 3rem;
+  text-align: center;
+  color: black;
+  border: 0;
+  background-color: rgba(0, 255, 255, 0.759);
+  box-shadow: 0px 2px 20px 2px#00FFFF;
+  margin-top: 8rem;
+  font-weight: 900;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+#footerFeedback button:hover {
+  cursor: pointer;
+  background-color: #00ffff;
+}
+
